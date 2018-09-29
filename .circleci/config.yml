@@ -56,3 +56,11 @@ workflows:
       - test:
           requires:
             - build
+     - deploy-approval:
+          type: approval
+          requires:
+            - build
+            - test
+          filters:
+            branches:
+              only: master
