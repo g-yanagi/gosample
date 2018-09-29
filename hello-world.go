@@ -18,10 +18,12 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/golang/example/stringutil"
 )
 
+func hello() string {
+	return "Hello World"
+}
+
 func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+	fmt.Println(hello())
 }
